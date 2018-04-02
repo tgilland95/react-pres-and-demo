@@ -1,0 +1,1 @@
+export const names = ["airbnbbox.svg","code-academy.png","discus.png","dropbox.svg","facebook.svg","instagram.png","khan.svg","lyft.png","messenger.svg","netflix.svg","next.png","pandora.png","pintrest.png","reddit.svg","twitter.png","udemy.png","walmart.svg","zapier.png"]
