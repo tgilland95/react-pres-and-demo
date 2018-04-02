@@ -19,7 +19,6 @@ const theme = createTheme(
     }
 )
 const slides = Object.values(allSlides)
-// [Zero, IntroToReact, ReactUsers, KeyConcepts]
 export default class Presentation extends React.Component {
     render() {
         return (
@@ -28,19 +27,4 @@ export default class Presentation extends React.Component {
             </Deck>
         )
     }
-}
-
-{
-    /* <Slide>
-    <Zero />
-</Slide>
-<Slide>
-    <IntroToReact />
-</Slide>
-<Slide>
-    <ReactUsers />
-</Slide>
-<Slide>
-    <KeyConcepts />
-</Slide> */
 }
