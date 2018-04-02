@@ -10,13 +10,13 @@ export const BrandTile = glamorous.img({
     margin: "10px",
 })
 
-export const ReactUsers = () => (
+export const ReactNativeUsers = () => (
     <Slide>
         <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            big names using react
+            big names using react native
         </Heading>
-        {names.react.map((name) => {
-            return <BrandTile src={require(`../../assets/sites_using_react/${name}`)} />
+        {names.reactNative.map((name) => {
+            return <BrandTile src={require(`../../assets/sites_using_react_native/${name}`)} />
         })}
     </Slide>
 )
