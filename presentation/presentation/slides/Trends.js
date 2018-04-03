@@ -3,13 +3,6 @@ import { Heading, Text, Quote, List, ListItem, BlockQuote, Cite, Image, tile, Sl
 import { names } from "../../assetFileNames"
 import glamorous from "glamorous"
 
-export const BrandTile = glamorous.img({
-    display: "inline-flex",
-    height: "128px",
-    width: "128px",
-    margin: "10px",
-})
-
 export const Trends = () => (
     <Slide>
         <Heading size={1} fit caps lineHeight={1} textColor="secondary">
