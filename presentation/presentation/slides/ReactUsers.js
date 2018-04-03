@@ -15,6 +15,7 @@ export const ReactUsers = () => (
         <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             big names using react
         </Heading>
+        <br/>
         {names.react.map((name) => {
             return <BrandTile src={require(`../../assets/sites_using_react/${name}`)} />
         })}

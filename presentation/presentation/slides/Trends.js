@@ -16,7 +16,7 @@ export const Trends = () => (
             react, angular, vue download trends
         </Heading>
         <br/>
-
             <Image src={require(`../../assets/other/${"trends.png"}`)} />
+        <br/>
     </Slide>
 )
