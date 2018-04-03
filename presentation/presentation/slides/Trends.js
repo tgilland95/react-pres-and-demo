@@ -15,7 +15,7 @@ export const Trends = () => (
         <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             react, angular, vue download trends
         </Heading>
-
+        <br/>
 
             <Image src={require(`../../assets/other/${"trends.png"}`)} />
     </Slide>

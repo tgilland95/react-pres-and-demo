@@ -1,15 +1,15 @@
 import React from "react"
 import { Heading, Text, Quote, List, ListItem, Slide } from "spectacle"
 
-export const WhatIsReact = () => (
+export const History = () => (
     <Slide >
         <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            What is React?
+            History
         </Heading>
         <List>
-            <ListItem>Front-end UI library</ListItem>
-            <ListItem>Open source</ListItem>
-            <ListItem>Maintained/developed by facebook</ListItem>
+            <ListItem>Facebook, Instagram - March 2013</ListItem>
+            <ListItem>Jordan Walke - Software Engineer</ListItem>
+            <ListItem>React Native - Early 2015</ListItem>
         </List>
     </Slide>
 )
