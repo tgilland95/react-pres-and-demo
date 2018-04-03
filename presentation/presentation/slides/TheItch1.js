@@ -1,5 +1,5 @@
 import React from "react"
-import { Heading, Text, Quote, Slide } from "spectacle"
+import { Heading, Text, Quote, Slide, List, ListItem } from "spectacle"
 
 export const TheItch1 = () => (
     <Slide>
@@ -10,7 +10,14 @@ export const TheItch1 = () => (
           <Text margin="10px 0 0" textColor="secondary" size={
                1
           }  bold>
-            Facebook's dilemma with Messenger
+          <List>
+            <ListItem>
+              Facebook's dilemma with Messenger
+            </ListItem>
+            <ListItem>
+              Allegory
+            </ListItem>
+          </List>
           </Text>
      </Slide>
 )
