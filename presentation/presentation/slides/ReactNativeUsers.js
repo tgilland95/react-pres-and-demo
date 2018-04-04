@@ -14,7 +14,7 @@ export const ReactNativeUsers = () => (
     <Slide>
         <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             big names using react native
-        </Heading>
+        </Heading><br/>
         {names.reactNative.map((name) => {
             return <BrandTile src={require(`../../assets/sites_using_react_native/${name}`)} />
         })}

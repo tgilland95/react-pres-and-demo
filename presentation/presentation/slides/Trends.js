@@ -3,21 +3,13 @@ import { Heading, Text, Quote, List, ListItem, BlockQuote, Cite, Image, tile, Sl
 import { names } from "../../assetFileNames"
 import glamorous from "glamorous"
 
-export const BrandTile = glamorous.img({
-    display: "inline-flex",
-    height: "128px",
-    width: "128px",
-    margin: "10px",
-})
-
-export const ReactUsers = () => (
+export const Trends = () => (
     <Slide>
         <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            big names using react
+            react, angular, vue download trends
         </Heading>
         <br/>
-        {names.react.map((name) => {
-            return <BrandTile src={require(`../../assets/sites_using_react/${name}`)} />
-        })}
+            <Image src={require(`../../assets/other/${"trends.png"}`)} />
+        <br/>
     </Slide>
 )
