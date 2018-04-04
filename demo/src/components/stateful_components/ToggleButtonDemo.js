@@ -13,13 +13,7 @@ export class ToggleButtonDemo extends Component {
         this.setState({ controlledValue: oldVal })
         */
     }
-    /**
-     * this would also work the same:
-     * handleClick = () => {
-     *     const oldVal = !this.state.controlledValue
-     * this.setState({ controlledValue: oldVal })
-     * }
-     * */
+
     render() {
         return (
             <div style={styles.wrapper}>
@@ -33,6 +27,14 @@ export class ToggleButtonDemo extends Component {
                         handleClick={this.handleClick}
                         label="toggle button"
                     />
+                </div>
+                <div>
+                    <p id="jsToggle">false </p>
+                    <br/>
+                    <button onClick={() => {
+                        document.getElementById("jsToggle").textContent = document.getElementById("jsToggle").textContent ==="true" ? "false" : "true"
+
+                    }}>js toggle</button>
                 </div>
                 <div style={styles.section}>
                     {JSON.stringify(this.state, null, 2)}

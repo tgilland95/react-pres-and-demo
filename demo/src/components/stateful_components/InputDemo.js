@@ -14,6 +14,7 @@ export class InputDemo extends Component {
                         style={{
                             fontSize: "1.5em",
                         }}
+                        id="jsInput"
                     />
                 </div>
                 <div style={styles.section}>

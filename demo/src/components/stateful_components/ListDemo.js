@@ -1,44 +1,52 @@
 import React, { Component } from "react"
-import { AddButton, ControlledInput, ItemList } from "../stateless_components/"
+import { AppButton, ControlledInput, ItemList } from "../stateless_components/"
 export class ListDemo extends Component {
     state = {
         inputVal: "",
-        listItems: [],
+        listItems: [
+            "oranges",
+            "apples",
+            "bananas",
+            "kiwi",
+            "pineapple",
+            "grapefruit",
+            "lemon",
+        ],
     }
     handleInputChange = (val) => this.setState({ inputVal: val })
-    handleAddItem = () => {
-        let newListItems = this.state.listItems
-        newListItems.push(this.state.inputVal)
-        this.setState({
-            listItems: newListItems,
-            inputVal: "",
-        })
-    }
-
     render() {
         return (
-            <div style={styles.wrapper}>
-                <div style={styles.section}>
-                    <AddButton
-                        handleAddItem={this.handleAddItem}
-                        disabled={!this.state.inputVal.trim().length > 0}
-                    />
-                    <ControlledInput
-                        val={this.state.inputVal}
-                        handleInputChange={this.handleInputChange}
-                    />
-                </div>
-                <div style={styles.section}>
-                    <ItemList items={this.state.listItems} />
-                </div>
-                <div style={styles.section}>
-                    {JSON.stringify(this.state, null, 2)}
+            <div>
+                <div style={styles.wrapper}>
+                    <div style={styles.section}>
+                        <br />
+                        <ItemList
+                            items={this.state.listItems}
+                            label={"normal"}
+                        />
+                    </div>
+                    <div style={styles.section}>
+                        <ItemList
+                            items={this.state.listItems}
+                            sorted={true}
+                            label={"sorted"}
+                        />
+                    </div>
+                    <div style={styles.section}>
+                        <ItemList
+                            items={this.state.listItems}
+                            filterString={"apples"}
+                            label={"filtered"}
+                        />
+                    </div>
+                    <div style={styles.section}>
+                        {JSON.stringify(this.state, null, 2)}
+                    </div>
                 </div>
             </div>
         )
     }
 }
-
 
 const styles = {
     wrapper: {
